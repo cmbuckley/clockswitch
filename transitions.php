@@ -19,4 +19,9 @@ $timezone = new DateTimeZone($timezone);
 
 header('Content-Type: application/vnd.clockswitch.transitions+json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
-echo json_encode($timezone->getTransitions($from, $to));
+
+echo json_encode(array_map(function ($transition) {
+    // ES5 timezones should be XX:XX, a restriction on ISO 8601
+    $transition['time'] = preg_replace('/(\+\d\d)(\d\d)$/', '$1:$2', $transition['time']);
+    return $transition;
+}, $timezone->getTransitions($from, $to)));
