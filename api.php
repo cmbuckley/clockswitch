@@ -63,6 +63,8 @@ $changeBackTime = new DateTime($transitions[2]['time']);
 $changeBackTime->setTimezone($timezone);
 
 header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
+
 echo json_encode(array(
     'change' => array(
         'amount' => getTimeDiff($transitions[1]['offset']),
