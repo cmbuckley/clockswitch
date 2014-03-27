@@ -1,8 +1,11 @@
 <!doctype html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
     <title>clockswitch</title>
     <script src="js/require.min.js" data-main="js/app"></script>
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
     <h1>clockswitch</h1>
@@ -12,9 +15,19 @@
     </select>, the clocks go <b class="facts-direction">&mdash;</b> by <b class="change-amount">&mdash;</b> on <b class="change-date">&mdash;</b>:</p>
 
     <p>
-        <span><b class="before-time">00:00</b> <span class="before-zone">&mdash;</span></span> <span>(UTC <span class="before-utc">&mdash;</span>)</span>
+        <span class="time">
+            <b class="before-time">00:00</b>
+            <span class="before-zone">&mdash;</span>
+            <span class="utc">(UTC <span class="before-utc">&mdash;</span>)</span>
+        </span>
+
         becomes
-        <span><b class="after-time">00:00</b> <span class="after-zone">&mdash;</span></span> <span>(UTC <span class="after-utc">&mdash;</span>)</span>
+
+        <span class="time">
+            <b class="after-time">00:00</b>
+            <span class="after-zone">&mdash;</span>
+            <span class="utc">(UTC <span class="after-utc">&mdash;</span>)</span>
+        </span>
     </p>
 
     <ul>
