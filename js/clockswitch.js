@@ -1,4 +1,4 @@
-define(['jquery'], function ($) {
+define(['ajax'], function (ajax) {
     function _facts(isdst) {
         return {
             'true': {
@@ -82,12 +82,12 @@ define(['jquery'], function ($) {
         };
     }
 
-    $.get('http://scripts.cmbuckley.co.uk/clockswitch/transitions.php', function (transitions) {
+    ajax.get('http://scripts.cmbuckley.co.uk/clockswitch/transitions.php', function (err, transitions) {
         data = _getData(transitions);
 
-        $.each(['change', 'revert', 'before', 'after', 'facts'], function (_, type) {
-            $.each(data[type], function (key, value) {
-                $('.' + type + '-' + key).text(value);
+        ['change', 'revert', 'before', 'after', 'facts'].forEach(function (type) {
+            Object.keys(data[type]).forEach(function (key) {
+                document.querySelector('.' + type + '-' + key).innerHTML = data[type][key];
             });
         });
     });
