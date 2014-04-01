@@ -62,7 +62,7 @@ define(['ajax'], function (ajax) {
 
         return {
             change: {
-                amount: _diff(transitions[1].offset),
+                amount: _diff(Math.abs(transitions[1].offset - current.offset)),
                 date:   _date(changeTime),
             },
             revert: {
