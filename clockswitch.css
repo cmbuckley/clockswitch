@@ -1,0 +1,35 @@
+.clockswitch {
+    text-align: center;
+    max-width: 26em;
+    margin: 0 auto;
+}
+
+.clockswitch select {
+    font: inherit;
+    font-size: 80%;
+}
+
+.clockswitch ul {
+    text-align: left;
+}
+
+.clockswitch .time {
+    display: inline-block;
+}
+
+.clockswitch .before-time,
+.clockswitch .after-time {
+    font-size: 250%;
+    display: block;
+}
+
+.clockswitch .utc {
+    display: block;
+}
+
+.clockswitch .change-amount,
+.clockswitch .change-date,
+.clockswitch .revert-date {
+    white-space: nowrap;
+}
+

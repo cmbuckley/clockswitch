@@ -1,17 +1,9 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no">
-    <title>clockswitch</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data-1970-2030.js"></script>
-    <script src="clockswitch.js"></script>
-    <link rel="stylesheet" href="https://clockswitch.herokuapp.com/css/main.css" />
-</head>
-<body>
-    <h1>clockswitch</h1>
+---
+layout: showcase
+title: clockswitch
+---
 
+<div class="clockswitch">
     <p>In <select class="locations">
         <optgroup label="Europe">
             <option value="Europe/London">the United Kingdom</option>
@@ -87,5 +79,9 @@
     </ul>
 
     <p>They go <span class="facts-revert">&mdash;</span> again on <a href="#" class="revert-stamp"><b class="revert-date">&mdash;</b></a>.</p>
-</body>
-</html>
+</div>
+
+<link rel="stylesheet" href="clockswitch.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data-1970-2030.js"></script>
+<script src="clockswitch.js"></script>
