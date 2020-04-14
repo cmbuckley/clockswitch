@@ -2,11 +2,90 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0;url=https://clockswitch.herokuapp.com">
-    <link rel="canonical" href="https://clockswitch.herokuapp.com" />
+    <meta name="viewport" content="width=device-width,user-scalable=no">
     <title>clockswitch</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data-1970-2030.js"></script>
+    <script src="clockswitch.js"></script>
+    <link rel="stylesheet" href="https://clockswitch.herokuapp.com/css/main.css" />
 </head>
 <body>
-    <p>This application is now managed at <a href="https://clockswitch.herokuapp.com">Heroku</a>.</p>
+    <h1>clockswitch</h1>
+
+    <p>In <select class="locations">
+        <optgroup label="Europe">
+            <option value="Europe/London">the United Kingdom</option>
+            <option value="Europe/Andorra">Andorra</option>
+            <option value="Europe/Vienna">Austria</option>
+            <option value="Europe/Brussels">Belgium</option>
+            <option value="Europe/Sofia">Bulgaria</option>
+            <option value="Europe/Prague">the Czech Republic</option>
+            <option value="Europe/Copenhagen">Denmark</option>
+            <option value="Europe/Tallinn">Estonia</option>
+            <option value="Europe/Helsinki">Finland</option>
+            <option value="Europe/Paris">France</option>
+            <option value="Europe/Berlin">Germany</option>
+            <option value="Europe/Gibraltar">Gibraltar</option>
+            <option value="Europe/Athens">Greece</option>
+            <option value="Europe/Budapest">Hungary</option>
+            <option value="Europe/Dublin">Ireland</option>
+            <option value="Europe/Rome">Italy</option>
+            <option value="Europe/Riga">Latvia</option>
+            <option value="Europe/Vaduz">Liechtenstein</option>
+            <option value="Europe/Vilnius">Lithuania</option>
+            <option value="Europe/Luxembourg">Luxembourg</option>
+            <option value="Europe/Malta">Malta</option>
+            <option value="Europe/Chisinau">Moldova</option>
+            <option value="Europe/Monaco">Monaco</option>
+            <option value="Europe/Amsterdam">the Netherlands</option>
+            <option value="Europe/Oslo">Norway</option>
+            <option value="Europe/Warsaw">Poland</option>
+            <option value="Europe/Lisbon">Portugal</option>
+            <option value="Europe/Bucharest">Romania</option>
+            <option value="Europe/Belgrade">Serbia</option>
+            <option value="Europe/Madrid">Spain</option>
+            <option value="Europe/Stockholm">Sweden</option>
+            <option value="Europe/Zurich">Switzerland</option>
+            <option value="Europe/Istanbul">Turkey</option>
+            <option value="Europe/Kiev">Ukraine</option>
+        </optgroup>
+        <optgroup label="America">
+            <option value="America/Anchorage">Alaska</option>
+            <option value="America/Chicago">Central</option>
+            <option value="America/New_York">Eastern</option>
+            <option value="America/Denver">Mountain</option>
+            <option value="America/Los_Angeles">Pacific</option>
+        </optgroup>
+        <optgroup label="Australia">
+            <option value="Australia/Adelaide">South Australia</option>
+            <option value="Australia/Melbourne">Victoria</option>
+        </optgroup>
+    </select>, the clocks go <b class="facts-direction">&mdash;</b> by <b class="change-amount">&mdash;</b> on <b class="change-date">&mdash;</b>:</p>
+
+    <p>
+        <span class="time">
+            <b class="before-time">00:00</b>
+            <span class="before-zone">&mdash;</span>
+            <span class="utc">(UTC <span class="before-utc">&mdash;</span>)</span>
+        </span>
+
+        &rarr;
+
+        <span class="time">
+            <b class="after-time">00:00</b>
+            <span class="after-zone">&mdash;</span>
+            <span class="utc">(UTC <span class="after-utc">&mdash;</span>)</span>
+        </span>
+    </p>
+
+    <ul>
+        <li>You&rsquo;ll <b class="facts-bed">&mdash;</b> <span class="change-amount">&mdash;</span> in bed</li>
+        <li>If you don&rsquo;t set your clock, you&rsquo;ll be <span class="change-amount">&mdash;</span> <b class="facts-forget">&mdash;</b></li>
+        <li>It&rsquo;ll be <b class="facts-morning">&mdash;</b> in the morning</li>
+        <li>But it&rsquo;ll be <b class="facts-evening">&mdash;</b> in the evening</li>
+        <li>Tasks scheduled for <b class="change-time">00:00</b> might <b class="facts-tasks">&mdash;</b></li>
+    </ul>
+
+    <p>They go <span class="facts-revert">&mdash;</span> again on <a href="#" class="revert-stamp"><b class="revert-date">&mdash;</b></a>.</p>
 </body>
 </html>
