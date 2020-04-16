@@ -19,6 +19,11 @@
     text-align: left;
 }
 
+.clockswitch .arrow {
+    vertical-align: 100%;
+    font-size: 150%;
+}
+
 .clockswitch .time {
     display: inline-block;
 }
@@ -27,6 +32,7 @@
 .clockswitch .after-time {
     font-size: 250%;
     display: block;
+    margin: 0 0.5em;
 }
 
 .clockswitch .utc {
