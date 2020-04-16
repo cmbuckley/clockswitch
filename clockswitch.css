@@ -9,6 +9,12 @@
     font-size: 80%;
 }
 
+@media screen and (hover: none) {
+    .clockswitch select {
+        font-size: 16px;
+    }
+}
+
 .clockswitch ul {
     text-align: left;
 }
@@ -32,4 +38,3 @@
 .clockswitch .revert-date {
     white-space: nowrap;
 }
-
