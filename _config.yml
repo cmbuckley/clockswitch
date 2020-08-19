@@ -28,9 +28,6 @@ navigation:
  - title: Projects
    url: /projects/
 
-plugins:
- - jekyll-remote-theme
-
 social:
    github:    cmbuckley
    linkedin:  cmbuckley
