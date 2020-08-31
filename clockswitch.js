@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
             transition = moment(transitionMillis),
             nextMillis = timezone.untils[timezone.untils.indexOf(transitionMillis) + 1];
 
+        if (!transition.isValid()) {
+            return console.log('Invalid transition:', transitionMillis, timezone.untils);
+        }
+
         // use UTC offsets to get change duration
         let diff = moment.duration(timezone.utcOffset(transitionMillis) - timezone.utcOffset(transitionMillis - 1), 'minutes');
 
