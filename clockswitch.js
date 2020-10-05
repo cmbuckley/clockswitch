@@ -37,12 +37,12 @@ document.addEventListener('DOMContentLoaded', function () {
             before: {
                 time: moment(transitionMillis - 1).format('HH:mm'),
                 zone: timezone.abbr(transitionMillis - 1),
-                utc:  moment(transitionMillis - 1).format('Z'),
+                utc:  moment(transitionMillis - 1).format('Z').replace('-', '−'),
             },
             after: {
                 time: transition.format('HH:mm'),
                 zone: timezone.abbr(transitionMillis),
-                utc:  transition.format('Z'),
+                utc:  transition.format('Z').replace('-', '−'),
             },
             facts: {
                 todst: {
