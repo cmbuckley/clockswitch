@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
         let date = search.has('date') ? search.get('date') : Date.now(),
             transitionMillis = timezone.untils.find(u => u > date),
             transition = moment(transitionMillis),
-            nextMillis = timezone.untils[timezone.untils.indexOf(transitionMillis) + 1];
+            transitionIndex = timezone.untils.indexOf(transitionMillis),
+            nextMillis = timezone.untils[transitionIndex + 1],
+            prevMillis = timezone.untils[transitionIndex - 1];
 
         if (!transition.isValid()) {
             return console.log('Invalid transition:', transitionMillis, timezone.untils);
@@ -33,6 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
             revert: {
                 date:  moment(nextMillis).format('LL'),
                 stamp: +moment(nextMillis - 1),
+            },
+            previous: {
+                date:  moment(prevMillis).format('LL'),
+                stamp: +moment(prevMillis - 1),
             },
             before: {
                 time: moment(transitionMillis - 1).format('HH:mm'),
