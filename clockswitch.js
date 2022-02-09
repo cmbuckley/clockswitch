@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.locations').addEventListener('change', update);
 
     if (search.has('tz')) {
-        let option = document.querySelector('.locations [value="' + search.get('tz'));
+        let option = document.querySelector('.locations [value="' + search.get('tz') + '"]');
         if (option) { option.selected = true; }
     }
 
