@@ -94,6 +94,6 @@ hide_tarball: true
 </div>
 
 <link rel="stylesheet" href="clockswitch.css">
-<script nonce="" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
-<script nonce="" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data-1970-2030.js"></script>
+<script nonce="" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/{{ site.data.package.dependencies.moment | replace: '^', '' }}/moment-with-locales.min.js"></script>
+<script nonce="" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/{{ site.data.package.dependencies['moment-timezone'] | replace: '^', '' }}/moment-timezone-with-data-1970-2030.js"></script>
 <script nonce="" src="clockswitch.js"></script>

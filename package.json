@@ -1,0 +1,10 @@
+{
+  "name": "clockswitch",
+  "version": "1.0.0",
+  "description": "Quick and dirty script to display what happens during a DST transition.",
+  "author": "Chris Buckley <chris@cmbuckley.co.uk>",
+  "dependencies": {
+    "moment": "^2.29.3",
+    "moment-timezone": "^0.5.34"
+  }
+}
