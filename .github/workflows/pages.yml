@@ -2,6 +2,8 @@ name: Deploy Jekyll site to Pages
 on:
   push:
     branches: main
+  repository_dispatch:
+    types: [pages]
 
 permissions:
   contents: read
