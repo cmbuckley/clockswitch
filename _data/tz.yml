@@ -1,0 +1,56 @@
+Europe:
+  Europe/London: the United Kingdom
+  Europe/Andorra: Andorra
+  Europe/Vienna: Austria
+  Europe/Brussels: Belgium
+  Europe/Sofia: Bulgaria
+  Europe/Prague: the Czech Republic
+  Europe/Copenhagen: Denmark
+  Europe/Tallinn: Estonia
+  Europe/Helsinki: Finland
+  Europe/Paris: France
+  Europe/Berlin: Germany
+  Europe/Gibraltar: Gibraltar
+  Europe/Athens: Greece
+  Europe/Budapest: Hungary
+  Europe/Dublin: Ireland
+  Europe/Rome: Italy
+  Europe/Riga: Latvia
+  Europe/Vaduz: Liechtenstein
+  Europe/Vilnius: Lithuania
+  Europe/Luxembourg: Luxembourg
+  Europe/Malta: Malta
+  Europe/Chisinau: Moldova
+  Europe/Monaco: Monaco
+  Europe/Amsterdam: the Netherlands
+  Europe/Oslo: Norway
+  Europe/Warsaw: Poland
+  Europe/Lisbon: Portugal
+  Europe/Bucharest: Romania
+  Europe/Belgrade: Serbia
+  Europe/Madrid: Spain
+  Europe/Stockholm: Sweden
+  Europe/Zurich: Switzerland
+  Europe/Kiev: Ukraine
+
+Africa:
+  Africa/Casablanca: Morocco
+
+Americas:
+  America/Anchorage: Alaska
+  America/Los_Angeles: the Pacific Time Zone
+  America/Denver: the Mountain Time Zone
+  America/Chicago: the Central Time Zone
+  America/New_York: the Eastern Time Zone
+  America/St_Johns: Newfoundland
+
+Atlantic:
+  Atlantic/Azores: the Azores
+  Atlantic/Bermuda: Bermuda
+  Atlantic/Canary: the Canary Islands
+  Atlantic/Faroe: the Faroe Islands
+  Atlantic/Madeira: Madeira
+
+Australia:
+  Australia/Adelaide: South Australia
+  Australia/Melbourne: Victoria
