@@ -18,3 +18,7 @@ jobs:
   pages:
     uses: cmbuckley/.github/.github/workflows/pages.yml@main
     secrets: inherit
+    with:
+      custom_commands: |
+        cd _data
+        npm install --package-lock-only
